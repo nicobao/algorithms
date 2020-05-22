@@ -10,4 +10,4 @@ Install [node](https://nose.readthedocs.io/en/latest/) and run `nosetests` in th
 
 ## License
 
-All content of this repository, including issues, wiki, code and documentation are licensed under [BSD-Patent](LICENSE).
+All content of this repository, including issues, wiki, code and documentation are licensed under [BSD-2-Clause Plus Patent](LICENSE).
