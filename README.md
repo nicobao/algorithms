@@ -1,4 +1,4 @@
-# Algorithms
+# Tech interview
 
 My preparation for tech interviews.
 Data structures, common algorithms, code problems...etc.
