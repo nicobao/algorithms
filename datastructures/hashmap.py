@@ -96,5 +96,9 @@ class Node:
     def value(self):
         return self._value
 
+    @value.setter
+    def value(self, value):
+        self._value = value
+
     def __eq__(self, other):
         return self._key == other.key

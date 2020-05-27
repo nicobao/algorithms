@@ -4,7 +4,11 @@ from datastructures.hashmap import HashMap
 
 class HashMapTest(unittest.TestCase):
 
-    def test_put_get(self):
+    def test_get_empty(self):
+        hashmap = HashMap()
+        self.assertIsNone(hashmap.get("foo"))
+
+    def test_put_get_new(self):
         hashmap = HashMap()
         # str
         hashmap.put("foo", 5)
@@ -41,3 +45,10 @@ class HashMapTest(unittest.TestCase):
         self.assertEqual(hashmap.get(1.564), "value_1_fl")
         self.assertEqual(hashmap.get(0.9583), "value_0.9")
         self.assertEqual(hashmap.get(0.564), "value_0.5")
+
+    def test_put_get_replace(self):
+        hashmap = HashMap()
+        hashmap.put("hey", 6)
+        self.assertEqual(hashmap.get("hey"), 6)
+        hashmap.put("hey", "waza[aa]")
+        self.assertEqual(hashmap.get("hey"), "waza[aa]")
