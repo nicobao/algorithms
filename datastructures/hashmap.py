@@ -75,7 +75,7 @@ class HashMap:
         return hash_value % (self._length - 1)
 
     def _increase_list_size(self):
-        # O(N + M)
+        # O(size old list)
         self._length = self._length*2
         new_list = [None for _ in range(1, self._length)]
         for index, node in enumerate(self._array_list):
