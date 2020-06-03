@@ -74,8 +74,6 @@ class ImmutableSinglyLinkedList:
                                                     next=self._next)
 
     def __eq__(self, other: "ImmutableSinglyLinkedList") -> bool:
-        if other.length != self.length:
-            return False
         return self._value == other.value and self._next == other.next
 
 
